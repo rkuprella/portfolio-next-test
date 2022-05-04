@@ -10,11 +10,13 @@ const Navbar = () => {
     <>
       <div className="fixed w-full h-[80px] flex justify-between items-center px-4  text-orange-700 gap-10 bg-orange-300/15 backdrop-blur-xl z-50">
         <div>
-          <Image src={Logo} alt="Logo" width={50} height={40} />
+          <a href="#index">
+            <Image src={Logo} alt="Logo" width={50} height={40} />
+          </a>
         </div>
 
         {/* menu */}
-        <ul className="hidden md:flex justify-around sm:text-lg md:text-xl lg:text-2xl font-semibold grow ">
+        <ul className="justify-around hidden font-semibold md:flex sm:text-lg md:text-xl lg:text-2xl grow ">
           <li className="hover:text-red-600 hover:text-3xl">
             <a href="#about">About</a>
           </li>
@@ -33,7 +35,7 @@ const Navbar = () => {
         </ul>
 
         {/* Hamburger */}
-        <div onClick={handleClick} className="md:hidden z-10">
+        <div onClick={handleClick} className="z-10 md:hidden">
           {!nav ? (
             <svg
               className="w-6 h-6"

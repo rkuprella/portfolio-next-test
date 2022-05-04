@@ -9,18 +9,18 @@ import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-import Image1 from "../public/01.jpg";
-import Image2 from "../public/02.jpg";
-import Image3 from "../public/03.jpg";
-import Image4 from "../public/04.jpg";
-import Image5 from "../public/05.jpg";
-import Image6 from "../public/06.jpg";
-import Image7 from "../public/07.jpg";
-import Image8 from "../public/08.jpg";
-import Image9 from "../public/09.jpg";
-import Image10 from "../public/10.jpg";
-import Image11 from "../public/11.jpg";
-import Image12 from "../public/12.jpg";
+import Image1 from "../public/assets/certificates/01.jpg";
+import Image2 from "../public/assets/certificates/02.jpg";
+import Image3 from "../public/assets/certificates/03.jpg";
+import Image4 from "../public/assets/certificates/04.jpg";
+import Image5 from "../public/assets/certificates/05.jpg";
+import Image6 from "../public/assets/certificates/06.jpg";
+import Image7 from "../public/assets/certificates/07.jpg";
+import Image8 from "../public/assets/certificates/08.jpg";
+import Image9 from "../public/assets/certificates/09.jpg";
+import Image10 from "../public/assets/certificates/10.jpg";
+import Image11 from "../public/assets/certificates/11.jpg";
+import Image12 from "../public/assets/certificates/12.jpg";
 
 class SimpleSlider extends Component {
   render() {
@@ -62,9 +62,7 @@ class SimpleSlider extends Component {
         <div>
           <Image width={1200} height={800} src={Image12} alt="Image12" />
         </div>
-       
       </Carousel>
-    
     );
   }
 }

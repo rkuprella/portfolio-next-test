@@ -9,8 +9,9 @@ import Head from "next/head";
 let title = "Dmitriy Malayev's Portfolio";
 const index = () => {
   return (
-    <div className="text-red-500 sm:pt-24 ">
+    <div className="text-red-500 sm:pt-24" id="index">
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title}</title>
         <meta name="title" content="Dmitriy Malayev's Portfolio" />
         <meta
@@ -48,14 +49,15 @@ const index = () => {
       <SectionWrapper
         id="about"
         title="About"
-        subtitle="Educated, Personable, Experienced & Certified"
+        about
+        subtitle="Educated, Personable, Experienced &amp; Certified"
         text="My name is Dmitriy Malayev. I am a Full-Stack Software Engineer with over three years of experience, a Bachelor of Science degree in Data Communications and Computer Science. I desire to learn constantly, whether taking online courses, reading blogs, debugging code, or tutoring others. Aside from my technical skills, my most significant strength is my communication skills, personable personality, and solid skills in team-building, project management, web development, and UI Design. "
       ></SectionWrapper>
 
       <SectionWrapper
         id="skills"
         title="Skills"
-        subtitle="Languages & Frameworks"
+        subtitle="Languages &amp; Frameworks"
       >
         <Skills />
       </SectionWrapper>
@@ -66,13 +68,13 @@ const index = () => {
       >
         <Projects />
       </SectionWrapper>
-      {/* <SectionWrapper
+      <SectionWrapper
         id="certificates"
         title="Certificates"
         subtitle="List of My Certificates"
       >
         <Certificates />
-      </SectionWrapper> */}
+      </SectionWrapper>
       <SectionWrapper
         id="contact"
         title="Contact"
